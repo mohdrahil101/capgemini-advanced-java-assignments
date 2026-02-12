@@ -1,0 +1,13 @@
+/**
+ * 
+ */
+package collection_and_stream;
+
+/**
+ * 
+ */
+public class EmployeeManagement {
+	public static void execution() {
+		
+	}
+}

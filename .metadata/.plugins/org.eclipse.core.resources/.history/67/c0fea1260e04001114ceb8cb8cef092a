@@ -1,0 +1,14 @@
+package junitdemo;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
+public class CalculatorTest {
+	Calculator calculator=new Calculator();
+	
+	@Test
+	public void testTwoAndTwoGivesFour() {
+		assertEquals(5, calculator.sum(2, 3));
+	}
+}

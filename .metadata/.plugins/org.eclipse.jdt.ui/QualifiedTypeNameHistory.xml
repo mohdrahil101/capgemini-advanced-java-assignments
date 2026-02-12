@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.Comparator"/>
+    <fullyQualifiedTypeName name="java.util.stream.Collector"/>
+    <fullyQualifiedTypeName name="com.capgemini.task.UserValidatorTest"/>
+    <fullyQualifiedTypeName name="com.capgemini.task.UserLoginValidation"/>
+</qualifiedTypeNameHistroy>
