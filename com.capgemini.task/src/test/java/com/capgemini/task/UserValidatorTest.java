@@ -1,0 +1,33 @@
+package com.capgemini.task;
+
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+
+
+public class UserValidatorTest {
+	@Test
+	void testUsername() {
+		assertTrue(UserLoginValidation.isValidUsername("User123"));
+	}
+	@Test
+	void testUsernameWithSpecialChar() {
+		assertFalse(UserLoginValidation.isValidUsername("User@123"));
+	}
+	@Test
+	void testUsernameLength() {
+		assertFalse(UserLoginValidation.isValidUsername("Use"));
+	}
+	@Test
+	void testEmptyUsername() {
+	    assertFalse(UserLoginValidation.isValidUsername(""));
+	}
+	@Test
+	void testNullUsername() {
+	    assertFalse(UserLoginValidation.isValidUsername(null));
+	}
+	@Test
+	void testPassword() {
+		assertTrue(UserLoginValidation.isValidPassword("User@12345894%"));
+	}
+}

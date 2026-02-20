@@ -1,8 +1,0 @@
-package collection_and_stream;
-
-public class JavaApplication {
-
-	public static void execution() {
-		
-	}
-}

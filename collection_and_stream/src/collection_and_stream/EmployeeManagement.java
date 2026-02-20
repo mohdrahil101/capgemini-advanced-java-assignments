@@ -22,9 +22,15 @@ public class EmployeeManagement {
 		employees.add(new Employee(103,"Maju","Core","Manager",40000.0,5));
 		employees.add(new Employee(104,"Naju","IT","Sales",100000.0,8));
 		
+		double sum=employees.stream().mapToDouble(e->e.getSalary()).sum();
+		System.out.println(sum);
 		
 		double averageSalary=employees.stream().mapToDouble(e -> e.getSalary()).average().orElse(0.0);
 		System.out.println("Average Salary: "+averageSalary);
+		
+//		double highestSalary=employees.stream().mapToDouble(e->e.getSalary()).max().orElse(0.0);
+		
+		String pattern="[0-9].*[0-9]";
 		
 		Employee highestSalaryEmployee=employees.stream().max(Comparator.comparing(Employee::getSalary)).orElse(null);
 		System.out.println("\nHighest Salary Employee: "+highestSalaryEmployee);
