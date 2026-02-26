@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Products</title>
+</head>
+<body>
+
+<center>
+	<h2>Product List</h2>
+
+	<table border="1">
+		<tr>
+			<th>ID</th>
+			<th>Name</th>
+			<th>Price</th>
+		</tr>
+
+		<tr th:each="product: ${products}">
+			<td th:text="${product.id}"></td>
+			<td th:text="${product.name}"></td>
+			<td th:text="${product.price}"></td>
+		</tr>
+	</table>
+</center>
+		
+</html>
