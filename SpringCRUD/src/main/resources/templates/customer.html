@@ -13,7 +13,11 @@
 			<th>Address</th>	
 		</tr>
 		<tr th:each="cust :${customers}">
-			<td th:text="${cust.id}"></td>			<td th:text="${cust.name}"></td>			<td th:text="${cust.email}"></td>			<td th:text="${cust.phone}"></td>			<td th:text="${cust.address}"></td>
+			<td th:text="${cust.id}"></td>
+			<td th:text="${cust.name}"></td>
+			<td th:text="${cust.email}"></td>
+			<td th:text="${cust.phone}"></td>
+			<td th:text="${cust.address}"></td>
 			<td>
 				<a th:href="@{/editCustomer/{id}(id=${cust.id})}">Edit</a>
 				<a th:href="@{/deleteCustomer/{id}(id=${cust.id})}" onclick="return confirm('Are you sure?')">Delete</a>
